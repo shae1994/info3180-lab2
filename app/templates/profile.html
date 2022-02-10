@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+    <title>INFO3180 Lab 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <script src="{{ url_for('static',filename='app.js') }}"></script>
+
+    <style>
+        #Cursive {
+            font-family: 'Cedarville Cursive';
+        }
+    </style>
+</head>
+
+
+
+<body>
+<main> 
+        {% extends 'base.html' %}
+        {% block main %}
+        <div class = "backdrop">
+            <div class="center">
+                <div class= "image">
+                    <img src="{{ url_for('static', filename='profilePic.jpg') }} ">
+                </div>
+
+                <h1 id="Cursive">Juddy-Shae La Tasha Wallace<h1>
+                <h3 id="mono">@simplyshae</h3>
+                <p id = "regular">Kingston, JAMAICA <p>
+                <p id = "regular"> Joined February 2022 <p>
+            </div>
+            <p id ="Cursive"> I am a 21-year-old Amateur Hobbyist, Lover of the fine arts; Christ-centered, and highly favored.  I love leaving a bit of sparkle everywhere I go ✨<p>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item">7</div>
+                <div class="grid-item">100</div>
+                <div class="grid-item">250</div>
+                <div class="grid-item">Posts</div>
+                <div class="grid-item">Following</div>
+                <div class="grid-item">Followers</div>
+              </div>
+        </div>
+
+        
+        
+        {% endblock %}
+</main> 
+
+    <p>Copyright &copy; 2021 Juddy-Shae Wallace.</p>
+</footer>
+</body>
+</html>

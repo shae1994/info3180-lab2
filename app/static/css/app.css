@@ -1,3 +1,40 @@
 body {
     padding-top: 5rem;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+.center{
+    background-image: linear-gradient(to left bottom, #93e78f, #00dcb4, #00cbdb, #00b4f3, #0097f1, #7e88ef, #bb75da, #e55fb6, #ff6a8d, #ff905f, #ffc13a, #e3f145);
+    top: 1fr 1fr ;
+    left: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    
+}
+
+#mono{
+    color: #ffffff;
+    font-weight: 900;  
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    font-weight: bold;
+}
+
+p{ 
+    font-size: 20px;
+}
+
+#regular{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
