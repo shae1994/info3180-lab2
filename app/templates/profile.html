@@ -25,26 +25,25 @@
         {% block main %}
         <div class = "backdrop">
             <div class="center">
-                <div class= "image">
-                    <img src="{{ url_for('static', filename='profilePic.jpg') }} ">
-                </div>
-
-                <h1 id="Cursive">Juddy-Shae La Tasha Wallace<h1>
-                <h3 id="mono">@simplyshae</h3>
-                <p id = "regular">Kingston, JAMAICA <p>
-                <p id = "regular"> Joined February 2022 <p>
-            </div>
+                    <img id="img" src="{{url_for ('static', filename ='its-a-me-mario.jpg') }} ">
+                    <h1 id="Cursive" class="cursive">Juddy-Shae La Tasha Wallace<h1>
+                    <h3 id="mono">@simplyshae</h3>
+                    <p id = "regular">Kingston, JAMAICA <p>
+                    <p id = "regular">{{date}}<p>
             <p id ="Cursive"> I am a 21-year-old Amateur Hobbyist, Lover of the fine arts; Christ-centered, and highly favored.  I love leaving a bit of sparkle everywhere I go ✨<p>
             </div>
 
             <div class="grid-container">
-                <div class="grid-item">7</div>
-                <div class="grid-item">100</div>
-                <div class="grid-item">250</div>
-                <div class="grid-item">Posts</div>
-                <div class="grid-item">Following</div>
-                <div class="grid-item">Followers</div>
+                <div id = "bigger-font" class="grid-item">7</div>
+                <div id = "bigger-font" class="grid-item">100</div>
+                <div id = "bigger-font" class="grid-item">250</div>
+                <div id = "banner"class="grid-item">Posts</div>
+                <div id = "banner"class="grid-item">Following</div>
+                <div id = "banner"class="grid-item">Followers</div>
+                <div id = "btn-f"class="btn"><button type="button">Follow</button>
+                </div>
               </div>
+            </div>
         </div>
 
         

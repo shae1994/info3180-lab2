@@ -5,10 +5,38 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 50px;
     padding-left: 20%;
     padding-right: 20%;
+    text-align: center;
+}
+
+.btn, #btn-f{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: none;
+    color: white;  
+    padding:none;   
+}
+
+button{
+    border: none;
+    text-decoration: none;
+    background-color: #f5ff68; /* Green */
+    border-radius: 8px;
+}
+
+#img{
+    border-radius: 50%;
+    width: 150px;
+    height:150px;
+}
+
+.cursive{
+    padding-top: 2%;
 }
 
 
@@ -17,6 +45,11 @@ body {
     top: 1fr 1fr ;
     left: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
+    padding-top: 10px;
+    padding-right: 5%;
+    padding-bottom: 10px;
+    padding-left: 5%;
+
     
 }
 
@@ -36,5 +69,13 @@ p{
 
 #regular{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
 
+#banner {    
+    font-family: monospace;
+}
+
+#bigger-font{
+    font-size:23px;
 }
